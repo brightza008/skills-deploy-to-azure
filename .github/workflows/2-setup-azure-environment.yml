@@ -101,7 +101,7 @@ jobs:
 
       # Merge the pull open pull request.
       - name: Merge Pull Request
-        run: gh pr merge --squash staging-workflow
+        run: gh pr merge --squash staging-workflow --admin
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
